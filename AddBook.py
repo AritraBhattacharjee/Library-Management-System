@@ -21,10 +21,7 @@ def bookRegister():
         msg.showinfo('Success',"Book added Successfully")
     except:
         msg.showinfo("Error","Cannot add Book to the Databases")
-    print(bid)
-    print(title)
-    print(author)
-    print(status)
+    
     root.destroy()
 
 def addBook():
