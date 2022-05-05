@@ -58,26 +58,20 @@ class Library(Tk):
         btn1 = Button(self,text="Add Book Details",bg='black',fg='white', command=addBook,font=('Courier',15))
         btn1.place(relx=0.28,rely=0.4,relwidth=0.45,relheight=0.1)
 
-        btn2 = Button(self,text="Delete Book",bg='black',fg='white', command=self.delete,font=('Courier',15))
+        btn2 = Button(self,text="Delete Book",bg='black',fg='white', command=deleteBook,font=('Courier',15))
         btn2.place(relx=0.28,rely=0.5,relwidth=0.45,relheight=0.1)
 
         btn3 = Button(self,text="View Book List",bg='black',fg='white', command=view,font=('Courier',15))
         btn3.place(relx=0.28,rely=0.6,relwidth=0.45,relheight=0.1)
 
-        btn4 = Button(self,text="Issue Book to Student",bg='black',fg='white', command=self.issueBook,font=('Courier',15))
+        btn4 = Button(self,text="Issue Book to Student",bg='black',fg='white', command=issueBook,font=('Courier',15))
         btn4.place(relx=0.28,rely=0.7,relwidth=0.45,relheight=0.1)
 
-        btn5 = Button(self,text="Return Book",bg='black',fg='white', command=self.returnBook,font=('Courier',15))
+        btn5 = Button(self,text="Return Book",bg='black',fg='white', command=returnBook,font=('Courier',15))
         btn5.place(relx=0.28,rely=0.8,relwidth=0.45,relheight=0.1)
 
     
-    def delete(self):
-        pass
-
-    def issueBook(self):
-        pass
-    def returnBook(self):
-        pass
+    
     def connect(self):
         conn = pymysql.connect(
         host="localhost",
