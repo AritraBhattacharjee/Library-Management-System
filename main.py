@@ -1,10 +1,8 @@
 from tkinter import *
 import pymysql
-from PIL import ImageTk,Image
-
-from AddBook import *
-from ViewBook2 import *
-from DeleteBook import *
+from AddBook import addBook
+from ViewBook2 import view
+from DeleteBook import deleteBook
 from IssueBook import *
 from ReturnBook import *
 
